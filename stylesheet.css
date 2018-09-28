@@ -1,0 +1,152 @@
+/*bron: https://www.youtube.com/watch?v=QhhYZJFOZnY*/
+@font-face {
+    font-family: 'nexa';
+    src: url(fonts/Nexa-bold.otf);
+    font-style: normal;
+}
+
+body {
+    background: white;
+    margin-top: 0;
+}
+
+main {
+    padding-top: 3.5rem;
+}
+
+h1,h2,h3,h5 {
+    color: #0FD67D;
+    font: 2.375rem;
+    font-family: nexa;
+}
+
+button {
+    border-radius: 0.125em;
+    background: #0FD67D;
+    color: white;
+    border: black;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+main+div {
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+    overflow: hidden;
+}
+
+article {
+    border-radius: .75em;
+    width: 12em;
+    height: 10em;
+    position: relative;
+    border: .05em solid gainsboro;
+    background: white;
+    margin-bottom: 1em;
+}
+
+article:nth-of-type(1) div {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    margin-left:-0.5em;  
+    font-family: nexa;
+    color: black;
+}
+
+article > img {
+    border: 2em;
+    position: absolute;
+    width: 12em;
+    height: 4em;
+    border-top-left-radius: .75em;
+    border-top-right-radius: .75em;
+}
+
+article:nth-of-type(1) h4 {
+    padding-top: 2em;
+    position: absolute;
+    left: 1.125em;
+    padding: .125em;
+    top: 3em;
+    font-family: nexa;
+    color: black;
+    
+    
+}
+
+ul {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    padding: .2em;
+    
+    padding-left: 1em;
+    margin-left: -1em;
+}
+
+nav > ul {
+    box-sizing: border-box;
+    box-shadow: 0em .3em .5em grey;
+    position: fixed;
+    background: white;
+    z-index: 100;
+    width: 100vw; 
+    margin-top: 0;
+    margin-left: -0.5em;
+    height: 3.5rem; 
+}
+
+
+form > ul {
+    background-color: #F3E5D9#FE2566;
+    width: 100vw;
+    margin-right: -1em;
+    
+}
+
+form > ul > li > img{
+    margin-top:1.1em;
+    margin-left: .3em;
+}
+
+li {
+    margin-right: 2em;
+    margin-left: -.3em;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    opacity: 0.95;
+    padding: 1.5em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 0;
+    border-radius: .75em;
+    position: absolute;
+    top: 4em;
+    left:1.5em;
+
+
+}
+main>img{
+    width: 100vw;
+    margin-left: -0.5em;  
+}
+
+nav > ul > li:nth-child(3){
+   flex-grow: 1; 
+
+}
+nav > ul > li:nth-child(1){
+    margin-left: -.6em;
+}
+nav > ul > li:nth-child(3){
+ margin-right: 5em;   
+}
+
+
