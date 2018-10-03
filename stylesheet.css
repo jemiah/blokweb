@@ -14,7 +14,7 @@ main {
     padding-top: 3.5rem;
 }
 
-h1,h2,h3,h5 {
+h1,h2,h3,h4,h5 {
     color: #0FD67D;
     font: 2.375rem;
     font-family: nexa;
@@ -83,9 +83,8 @@ ul {
     flex-direction: row;
     display: flex;
     padding: .2em;
-    
     padding-left: 1em;
-    margin-left: -1em;
+    margin-left: 0em;
 }
 
 nav > ul {
@@ -115,21 +114,22 @@ form > ul > li > img{
 
 li {
     margin-right: 2em;
-    margin-left: -.3em;
+    margin-left: -.9em;
 }
 
 h1 {
     text-align: center;
     background-color: white;
     opacity: 0.95;
-    padding: 1.5em;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 0;
+    padding: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1em;
     border-radius: .75em;
     position: absolute;
     top: 4em;
     left:1.5em;
+    width: 34vw;
 
 
 }
@@ -139,14 +139,12 @@ main>img{
 }
 
 nav > ul > li:nth-child(3){
-   flex-grow: 1; 
+   flex-grow: 2;
+margin-right: -2em;
 
 }
 nav > ul > li:nth-child(1){
     margin-left: -.6em;
-}
-nav > ul > li:nth-child(3){
- margin-right: 5em;   
 }
 
 
