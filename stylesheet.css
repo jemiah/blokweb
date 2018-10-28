@@ -1,3 +1,4 @@
+/*======ALGEMEEN======*/
 /*bron: https://www.youtube.com/watch?v=QhhYZJFOZnY*/
 
 @font-face {
@@ -22,7 +23,6 @@ h1,
 h2,
 h3 {
     color: #0FD67D;
-
     font-size: 2.375rem;
 }
 
@@ -57,7 +57,6 @@ li {
 
 /*======HEADER======*/
 nav > ul {
-
     box-shadow: 0em .2em .6em grey;
     position: fixed;
     top: 0;
@@ -69,7 +68,9 @@ nav > ul {
     width: 100%;
 }
 
-nav > ul > li:nth-child(1) {}
+nav > ul > li:nth-child(1) {
+    padding-left: 0.3em;
+}
 
 nav > ul > li:nth-child(2) {
     margin-top: 0.9em;
@@ -77,19 +78,19 @@ nav > ul > li:nth-child(2) {
 
 
 nav > ul > li:nth-child(4) {
-    margin-top: 0.2em;
+    padding: 0.2em;
     margin-right: 1em;
 
 }
 
 nav > ul > li:nth-child(3) {
-    margin-top: 0.9em;
-    flex-grow: ;
+    padding-top: 0.9em;
+    flex-grow: 2;
 }
 
 nav > ul > li:nth-child(5) {
     margin-top: 0.2em;
-    /margin-right: 0em;
+    margin-right: 0em;
 }
 
 nav > ul > li > a {
@@ -111,7 +112,7 @@ form > ul > li > button {
     color: white;
     border: none;
     box-shadow: 0px 3px 0px 0px #14003E;
-    margin-left: -0.1em;
+
 }
 
 
@@ -167,7 +168,7 @@ header {
     background-size: cover;
     background-image: url(afbeeldingen/strand.jpg);
     margin-bottom: -3.5em;
-    padding-top: 7rem;
+    padding-top: 8.5rem;
 }
 
 
@@ -190,7 +191,7 @@ section > div {
 
 section {
     justify-content: center;
-    /*    overflow: hidden;*/
+
 }
 
 .progressiebalk {
@@ -202,75 +203,44 @@ section {
 
 article {
     border-radius: 1rem;
-    /*
-    width: 21em;
-    height: 10em;
-*/
     position: relative;
     border: .05em solid gainsboro;
     background: white;
-    margin-bottom: 1em;
-    /*    margin-right: .8em;*/
-
     display: flex;
     flex-wrap: wrap;
-
-
+    margin: 0.5em;
 }
 
 article a {
     width: 100%;
 }
 
-article > h4 {
-    margin-top: -0.8em;
-    margin-left: -0.7em;
-}
-
-article > img:nth-child(2) {
-    /*    margin: 2em;*/
-}
 
 article div {
-    /*    position: absolute;*/
-    /*    right: 1em;*/
-    /*    bottom: 1em;*/
-
     color: black;
-    display: flex;
-    align-items: center;
 }
 
-article div > img {
-    /*    margin-bottom: -0.65em;*/
-    margin-left: 0.3em;
-    /*    right: 2em;*/
-
+article div img {
+    margin-bottom: -0.5em;
 }
 
 article footer {
     display: flex;
-    width: 100%;
+    width: 90%;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
 }
-
 
 article a > img {
     border: 2em;
-    /*    position: absolute;*/
     width: 100%;
     max-height: 5em;
-    border-top-left-radius: .75em;
-    border-top-right-radius: .75em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 article h4 {
-    /*    padding-top: 2em;*/
-    /*    position: absolute;*/
-    /*    left: 1.125em;*/
-    /*    padding: .125em;*/
-    /*    top: 4.5em;*/
     margin: 0;
-
     color: #30009D;
 }
 
@@ -284,7 +254,33 @@ section:nth-of-type(2) {
 article button {
     background-color: white;
     border: none;
-    /left: 13em;
+}
+
+/*===========MICRO-INTERACTIONS===========*/
+footer button {
+    background-image: url(afbeeldingen/downloadknop.gif);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+}
+
+.melding {
+    background-image: url(afbeeldingen/melding.svg);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 1.5em;
+    padding-right: 1em;
+
+}
+
+.kruisje {
+    background-image: url(afbeeldingen/kruisjepaars.svg);
+    background-size: 3em;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-left: 3em;
+    margin-left: -2.5em;
+    margin-top: -1em;
 }
 
 
@@ -304,10 +300,12 @@ legend {}
 @media (max-width: 29em) {
 
     article {
-        min-width: 21em;
+        min-width: 23em;
     }
 
 }
+
+
 
 /*=======IPAD FORMAAT=========*/
 @media (min-width: 29em) and (max-width: 63.8em) {
@@ -316,7 +314,7 @@ legend {}
     }
 
     article {
-        width: 50%;
+        width: 40%;
     }
 
     section > div {
@@ -354,14 +352,9 @@ legend {}
         justify-content: center;
     }
 
-    nav > ul > li:nth-child(5) {
-        margin-top: 0.2em;
-        margin-right: 1em;
-
-    }
 
     article {
-        width: 33%;
+        width: 30%;
     }
 
     form > ul {
@@ -377,7 +370,7 @@ legend {}
     }
 }
 
-/*===========Verhaal resposive vormgeven===========*/
+/*===========VERHAAL RESPONSIVE VORMGEVEN===========*/
 /*======IPHONE FORMAAT========*/
 @media (max-width: 29em)
 
