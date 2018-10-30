@@ -10,13 +10,18 @@ var bewerken = document.querySelector('form ul li button');
 console.log('test');
 
 
+
 downloadKnop.addEventListener('click', function () {
     downloadKnop.classList.toggle('gedownload');
     mijnLijstNotificatie.classList.toggle('ping');
 });
+
+
 bewerken.addEventListener('click', function () {
     bewerken.classList.toggle('klik');
+    console.log('pasta');
 });
+
 
 deleten.addEventListener('click', function () {
     deleten.classList.toggle('kruisje');

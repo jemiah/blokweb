@@ -250,8 +250,6 @@ article button {
 }
 
 
-
-
 /*===========MICRO-INTERACTIONS===========*/
 footer button {
     background-image: url(afbeeldingen/download.svg);
@@ -327,69 +325,9 @@ article > button {
     opacity: 0;
 }
 
-
-/*===========INLOGGEN===========*/
-
-form {}
-
-legend {
-    padding-top: -10em;
-}
-
-input {
-    border-radius: 2px;
-    border: 1px solid #dfdfdf;
-    outline: none;
-    font-family: nexa;
-    font-size: 1rem;
-
-}
-
-fieldset {
-    border-radius: 1rem;
-    border: none;
-    background-color: white;
-
-}
-
-
-fieldset button {
-    background-color: #FE2566;
-    padding: 0.5em;
-    border-radius: 6.25rem;
-    font-size: 1rem;
-    color: white;
-    border: none;
-    box-shadow: 0px 3px 0px 0px #C92254;
-    margin-top: 0.5em;
-}
-
-fieldset div:nth-of-type(2) {
-    float: right;
-    width: 30%;
-    font-size: 1rem;
-
-}
-
-fieldset div:nth-of-type(1) {
-    float: left;
-    width: 30%;
-
-}
-
-fieldset img {
-    padding-top: 1em;
-    margin-left: 1.4em;
-}
-
-#kleur {
+li button {
     background: none;
-    margin-top: -15rem;
-
-}
-
-#achtergrond {
-    background-color: #0FD67D;
+    border: none;
 }
 
 /*======IPHONE FORMAAT========*/
@@ -402,11 +340,7 @@ fieldset img {
 }
 
 /*=======IPAD FORMAAT=========*/
-@media (min-width: 30.1em) and (max-width: 63.8em) {
-    section > h2 {
-        margin: 0;
-    }
-
+@media (min-width: 30.1em) and (max-width: 63.9em) {
     article {
         width: 40%;
     }
@@ -419,7 +353,6 @@ fieldset img {
         display: flex;
         bottom: -1em;
         width: 8em;
-
     }
 
 
@@ -445,10 +378,8 @@ fieldset img {
 }
 
 
-
 /*===========LAPTOP FORMAAT===========*/
 @media (min-width: 64em) and (max-width: 162em) {
-    main h1 {}
 
     section > div {
         display: flex;
@@ -475,6 +406,11 @@ fieldset img {
 }
 
 /*===========VERHAAL RESPONSIVE VORMGEVEN===========*/
+#afbeeldingweg {
+    background: none;
+    margin-top: -13em;
+}
+
 /*======IPHONE FORMAAT========*/
 @media (max-width: 29em) {
     #verhaalmobiel {
