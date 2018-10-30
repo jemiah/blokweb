@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Transavia</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href=""><img src="afbeeldingen/transavia-vector-logo.svg" alt="logo" width="50"></a></li>
-            <li>
-                <a href="index.html"><img src="afbeeldingen/down-arrow.svg" alt="" width="15">Verhalen</a>
-            </li>
-            <li><a href="mijnlijst.html">
-                    <img src="afbeeldingen/down-arrow.svg" alt="" width="15">Mijn lijst
-                </a>
-            </li>
-            <li><a href=""><img src="afbeeldingen/zoek-icoon.svg" alt="" width="44"></a></li>
-            <li><a href=""><img src="afbeeldingen/inlog-icoon.svg" alt="" width="43"></a></li>
-        </ul>
-    </nav>
-</header>
 
-<body>
-    <form action="">
-        <fieldset>
-            <legend>Inloggen met mijn Transavia</legend>
-            <label for="">E-mail adres</label>
-            <input type="text">
-            <button>Stuur me een magic link</button>
-        </fieldset>
-        <fieldset>
-            <label for=""> Plaats je vinger op het apparaat
-            </label>
-            <img src="afbeeldingen/fingerprint.svg" alt="" width="100">
+<body id="achtergrond">
+    <header id="kleur">
+        <nav>
+            <ul>
+                <li><a href=""><img src="afbeeldingen/transavia-vector-logo.svg" alt="logo" width="50"></a></li>
+                <li>
+                    <a href="index.html"><img src="afbeeldingen/down-arrow.svg" alt="" width="15">Verhalen</a>
+                </li>
+                <li><a href="mijnlijst.html">
+                        <img src="afbeeldingen/down-arrow.svg" alt="" width="15">Mijn lijst
+                    </a>
+                </li>
+                <li><a href=""><img src="afbeeldingen/zoek-icoon.svg" alt="" width="44"></a></li>
+                <li><a href=""><img src="afbeeldingen/inlog-icoon.svg" alt="" width="43"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </fieldset>
-
-
-    </form>
+    <main>
+        <form action="index.html">
+            <fieldset>
+                <legend>Log in bij mijn Transavia</legend>
+                <hr>
+                <div>
+                    <label>E-mail adres</label>
+                    <input type="text" placeholder="gebruiker@domein.nl">
+                    <button>Stuur me een magic link</button>
+                </div>
+                <div>
+                    <label> Plaats je vinger op het apparaat</label>
+                    <img src="afbeeldingen/fingerprint.svg" alt="" width="100">
+                </div>
+            </fieldset>
+        </form>
+    </main>
 </body>

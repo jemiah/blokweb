@@ -3,23 +3,23 @@
 /*eslint 'no-console':0*/
 
 var downloadKnop = document.querySelector('footer button');
-//console.log("downloadKnop", downloadKnop);
+var mijnLijstNotificatie = document.querySelector('.melding');
+var deleten = document.querySelector('article>button');
+var verstop = document.querySelector('section div article:last-of-type');
+var bewerken = document.querySelector('form ul li button');
+console.log('test');
+
+
 downloadKnop.addEventListener('click', function () {
-    //console.log("downloadKnop", downloadKnop);
     downloadKnop.classList.toggle('gedownload');
+    mijnLijstNotificatie.classList.toggle('ping');
+});
+bewerken.addEventListener('click', function () {
+    bewerken.classList.toggle('klik');
 });
 
-
-var mijnLijstNotificatie = document.classList('footer button');
-
-
-
-mijnLijstNotificatie.addEventListener('click', function () {
-    downloadKnop.classList.toggle('.melding');
+deleten.addEventListener('click', function () {
+    deleten.classList.toggle('kruisje');
+    verstop.classList.toggle('weg');
+    console.log('rijst');
 });
-//
-
-//var kruisjes = document.querySelector('footer button');
-
-
-//document.querySelector('#knop').addEventListener('click', meme, false);

@@ -85,6 +85,7 @@ nav > ul > li:nth-child(4) {
 nav > ul > li:nth-child(3) {
     padding-top: 0.9em;
     flex-grow: 2;
+    position: relative;
 }
 
 nav > ul > li:nth-child(5) {
@@ -248,6 +249,9 @@ article button {
     padding: 1.5em;
 }
 
+
+
+
 /*===========MICRO-INTERACTIONS===========*/
 footer button {
     background-image: url(afbeeldingen/download.svg);
@@ -260,44 +264,132 @@ footer button {
     background-image: url(afbeeldingen/downloadknop.gif);
 }
 
+
 .melding {
+    position: absolute;
     background-image: url(afbeeldingen/melding.svg);
     background-size: 1.5em;
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 1.5em;
-    padding-right: 1em;
+    padding-right: 2em;
+    margin-left: 3.7em;
+    margin-top: -0.88em;
+    opacity: 0;
+
+    /*:transition {
+        opacity: 1;
+    }*/
 }
+
+.ping {
+    transition: 5s;
+    opacity: 1;
+}
+
 
 .kruisje {
     background-image: url(afbeeldingen/kruisjepaars.svg);
-    background-size: 3em;
+    background-size: 4em;
     background-repeat: no-repeat;
-    background-position: top;
-    padding-left: 3em;
-    margin-left: -2.5em;
+    padding: 2em;
     margin-top: -1em;
+    margin-left: -1.7em;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+section div article:last-of-type {
+    opacity: 1;
+}
+
+.verwijderen {
+    opacity: 0;
+}
+
+form ul li button {}
+
+.klik {
+    background-color: #FE2566;
+    box-shadow: 0px 3px 0px 0px #C92254;
+}
+
+article .mijnlijst {
+    position: relative;
+}
+
+article > button {
+    position: absolute;
+    background: none;
+    opacity: 0;
 }
 
 
 /*===========INLOGGEN===========*/
-body > form {
-    margin: auto;
-    background: white;
-    opacity: 0.95;
-    border-radius: 1rem;
+
+form {}
+
+legend {
+    padding-top: -10em;
 }
 
-legend {}
+input {
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    font-family: nexa;
+    font-size: 1rem;
+
+}
+
+fieldset {
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+
+}
+
 
 fieldset button {
     background-color: #FE2566;
     padding: 0.5em;
-    border-radius: 6.25em;
+    border-radius: 6.25rem;
     font-size: 1rem;
     color: white;
     border: none;
-    box-shadow: 0px 3px 0px 0px #;
+    box-shadow: 0px 3px 0px 0px #C92254;
+    margin-top: 0.5em;
+}
+
+fieldset div:nth-of-type(2) {
+    float: right;
+    width: 30%;
+    font-size: 1rem;
+
+}
+
+fieldset div:nth-of-type(1) {
+    float: left;
+    width: 30%;
+
+}
+
+fieldset img {
+    padding-top: 1em;
+    margin-left: 1.4em;
+}
+
+#kleur {
+    background: none;
+    margin-top: -15rem;
+
+}
+
+#achtergrond {
+    background-color: #0FD67D;
 }
 
 /*======IPHONE FORMAAT========*/
@@ -308,9 +400,6 @@ fieldset button {
     }
 
 }
-
-
-
 
 /*=======IPAD FORMAAT=========*/
 @media (min-width: 30.1em) and (max-width: 63.8em) {
@@ -333,7 +422,6 @@ fieldset button {
 
     }
 
-    footer div {}
 
     section > div {
         display: flex;
@@ -345,7 +433,6 @@ fieldset button {
     nav > ul > li:nth-child(5) {
         margin-top: 0.2em;
         margin-right: 0.3em;
-
     }
 
     form > ul {

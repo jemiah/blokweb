@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Mijn lijst</title>
-
-
 </head>
 
 <body>
@@ -26,12 +24,11 @@
                 <li><a href=""><img src="afbeeldingen/zoek-icoon.svg" alt="" width="44"></a></li>
                 <li><a href="inloggen.html"><img src="afbeeldingen/inlog-icoon.svg" alt="" width="43"></a></li>
             </ul>
-
         </nav>
         <h1>Mijn lijst</h1>
     </header>
     <main>
-        <form action="index.html">
+        <form action="mijnlijst.html">
             <ul>
                 <li><img src="afbeeldingen/settings.svg" alt="" width="30"></li>
                 <li>
@@ -39,7 +36,6 @@
                         Bewerken
                     </button>
                 </li>
-
             </ul>
         </form>
 
@@ -47,7 +43,8 @@
             <h2>Verhalen</h2>
             <div>
 
-                <article>
+                <article class="mijnlijst">
+                    <button class="kruisje"></button>
                     <a href="vanvadertotzoon.html">
                         <img src="afbeeldingen/verhaal1.jpg" alt="" width="90">
                         <h4>Van vader tot zoon</h4>
@@ -58,9 +55,11 @@
                         <div>58 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
                     </footer>
                 </article>
-                <div class="kruisje"></div>
 
-                <article>
+
+
+                <article class="mijnlijst" id="weg">
+                    <button class="kruisje"></button>
                     <a href="">
                         <img src="afbeeldingen/boos.jpg" alt="">
                         <h4>Paranoia</h4>
@@ -71,9 +70,11 @@
                         <div>98 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
                     </footer>
                 </article>
-                <div class="kruisje"></div>
+
             </div>
         </section>
     </main>
-
+    <script src="javascript.js"></script>
 </body>
+
+</html>
