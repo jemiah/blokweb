@@ -301,7 +301,7 @@ fieldset button {
 }
 
 /*======IPHONE FORMAAT========*/
-@media (max-width: 29em) {
+@media (max-width: 30em) {
 
     article {
         min-width: 23em;
@@ -313,7 +313,7 @@ fieldset button {
 
 
 /*=======IPAD FORMAAT=========*/
-@media (min-width: 29em) and (max-width: 63.8em) {
+@media (min-width: 30.1em) and (max-width: 63.8em) {
     section > h2 {
         margin: 0;
     }
@@ -322,11 +322,23 @@ fieldset button {
         width: 40%;
     }
 
+    article footer {
+        width: 100%;
+    }
+
+    .progressiebalk {
+        display: flex;
+        bottom: -1em;
+        width: 8em;
+
+    }
+
+    footer div {}
+
     section > div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
 
     }
 

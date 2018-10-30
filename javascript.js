@@ -10,9 +10,7 @@ downloadKnop.addEventListener('click', function () {
 });
 
 
-
-
-var mijnLijstNotificatie = document.classList('.melding');
+var mijnLijstNotificatie = document.classList('footer button');
 
 
 
