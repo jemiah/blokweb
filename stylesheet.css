@@ -151,7 +151,6 @@ form > ul > li > img {
 /*=======MAIN=======*/
 main {
     padding-top: 3.5rem;
-    display: grid;
     position: relative;
 }
 
