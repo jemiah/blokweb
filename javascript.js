@@ -17,9 +17,10 @@ downloadKnop.addEventListener('click', function () {
 });
 
 
-bewerken.addEventListener('click', function () {
+bewerken.addEventListener('click', function (event) {
+    event.preventDefault();
     bewerken.classList.toggle('klik');
-    console.log('pasta');
+    console.log('pastaaaaa');
 });
 
 
