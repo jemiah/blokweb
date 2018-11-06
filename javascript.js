@@ -27,14 +27,15 @@ bewerken.addEventListener('click', function (event) {
     console.log('pastaaaaa');
 });
 
+form.addEventListener('click', function (event) {
+    event.preventDefault();
+    zoek.classList.toggle('laatzien');
+    form.addEventListener('zoekknop');
+    console.log('testa');
+});
 
 deletenTwee.addEventListener('click', function () {
     verstop.classList.toggle('verwijderen');
     deletenTwee.classList.toggle('kruisje');
     console.log('rijst');
-});
-
-form.addEventListener('click', function () {
-    zoek.classList.toggle('laatzien');
-    console.log('testa');
 });

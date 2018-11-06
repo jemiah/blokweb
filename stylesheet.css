@@ -232,6 +232,10 @@ form > ul > li > img {
     opacity: 0;
 }
 
+.zoekknop {
+    background-image: url(afbeeldingen/zoek-icoonhover.svg);
+}
+
 .laatzien {
     opacity: 1;
 }
@@ -330,7 +334,6 @@ article {
 article a {
     width: 100%;
 }
-
 
 article div {
     color: black;
@@ -463,10 +466,10 @@ footer button {
     background-image: url(afbeeldingen/melding.svg);
     background-size: 1.5em;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     padding-top: 1.5em;
     padding-right: 2em;
-    margin-left: 3.7em;
+    margin-left: 3.4em;
     margin-top: -0.88em;
     opacity: 0;
 
