@@ -15,59 +15,67 @@
     <header>
         <nav>
             <ul>
-                <li><a href=""><img src="afbeeldingen/transavia-vector-logo.svg" alt="logo" width="50"></a></li>
+                <li><a href="" id="logo"></a></li>
                 <li>
-                    <a href="index.html"><img src="afbeeldingen/down-arrow.svg" alt="" width="15">Verhalen</a>
+                    <a href="index.html" class="pijltje">Verhalen</a>
                 </li>
-                <li> <a href="mijnlijst.html">
+                <li> <a href="mijnlijst.html" class="pijltje">
                         <div class="melding"></div>
-                        <img src="afbeeldingen/down-arrow.svg" alt="" width="15">Mijn lijst
+                        Mijn lijst
                     </a>
                 </li>
-                <li><button><img src="afbeeldingen/zoek-icoon.svg" alt="" width="44"></button></li>
-                <li><a><img src="afbeeldingen/inlog-icoon.svg" alt="" width="43"></a></li>
+                <li><button></button></li>
+                <li><a>
+                        <div id="login"></div>
+                    </a></li>
             </ul>
 
         </nav>
-
-        <h1>Verhalen</h1>
-    </header>
-    <main>
-
-        <form action="index.html">
-            <ul>
-                <li><img src="afbeeldingen/sort-by-attributes.svg" alt="" width="30"></li>
-                <li>
-                    <button>
-                        Alfabetisch
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        Datum
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        Populariteit
-                    </button>
-                </li>
-            </ul>
+        <form action="#" class="zoek">
+            <fieldset id="zoeken">
+                <input type="text" placeholder="Typ je zoekwoorden">
+                <button></button>
+            </fieldset>
         </form>
+        <h1>Verhalen</h1>
+
+    </header>
 
 
+    <form action="index.html">
+        <ul>
+            <li id="sorteer"></li>
+            <li>
+                <button>
+                    Alfabetisch
+                </button>
+            </li>
+            <li>
+                <button>
+                    Datum
+                </button>
+            </li>
+            <li>
+                <button>
+                    Populariteit
+                </button>
+            </li>
+        </ul>
+    </form>
+
+    <main>
         <section>
             <h2>Verder lezen</h2>
             <div>
                 <article>
                     <a href="vanvadertotzoon.html">
                         <img src="afbeeldingen/verhaal1.jpg" alt="" width="90">
-                        <h4>Van vader tot zoon</h4>
+                        <h3>Van vader tot zoon</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie.svg" alt="">
                         <button></button>
-                        <div>58 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>58</div>
                     </footer>
                 </article>
 
@@ -75,12 +83,12 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/boos.jpg" alt="">
-                        <h4>Paranoia</h4>
+                        <h3>Paranoia</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie1.0.svg" alt="">
                         <button></button>
-                        <div>98 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>98</div>
                     </footer>
                 </article>
 
@@ -88,24 +96,24 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/stoned.jpg" alt="" width="90">
-                        <h4>Stoned</h4>
+                        <h3>Stoned</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie2.0.svg" alt="">
                         <button></button>
-                        <div>44 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>44</div>
                     </footer>
                 </article>
 
                 <article>
                     <a href="">
                         <img src="afbeeldingen/alzheimer.jpg" alt="" width="90">
-                        <h4>Alzheimer</h4>
+                        <h3>Alzheimer</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie1.0.svg" alt="">
                         <button></button>
-                        <div>42 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>42</div>
                     </footer>
                 </article>
 
@@ -113,12 +121,12 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/amina.jpg" alt="" width="90">
-                        <h4>Amina</h4>
+                        <h3>Amina</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie.svg" alt="">
                         <button></button>
-                        <div>61 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>61</div>
                     </footer>
                 </article>
 
@@ -126,12 +134,12 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/kater.jpg" alt="">
-                        <h4>Kater</h4>
+                        <h3>Kater</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie2.0.svg" alt="">
                         <button></button>
-                        <div>99 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>99</div>
                     </footer>
                 </article>
 
@@ -145,11 +153,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/beroemd.jpg" alt="" width="90">
-                        <h4>Beroemd</h4>
+                        <h3>Beroemd</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>70 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>70</div>
                     </footer>
                 </article>
 
@@ -157,11 +165,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/freudiaans.jpg" alt="" width="90">
-                        <h4>Freudiaans</h4>
+                        <h3>Freudiaans</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>55 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>55</div>
                     </footer>
                 </article>
 
@@ -169,11 +177,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/zoon.jpg" alt="" width="90">
-                        <h4>Zoon</h4>
+                        <h3>Zoon</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>63 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>63</div>
                     </footer>
                 </article>
 
@@ -181,11 +189,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/telegraaf.jpg" alt="" width="90">
-                        <h4>Telegrafisch</h4>
+                        <h3>Telegrafisch</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>150 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>150</div>
                     </footer>
                 </article>
 
@@ -193,11 +201,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/zombie.jpg" alt="" width="90">
-                        <h4>Zombie</h4>
+                        <h3>Zombie</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>201 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>201</div>
                     </footer>
                 </article>
 
@@ -205,11 +213,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/regenboog.jpg" alt="">
-                        <h4>Regenboog</h4>
+                        <h3>Regenboog</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>260 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>260</div>
                     </footer>
                 </article>
 
@@ -222,11 +230,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/code.jpg" alt="" width="90">
-                        <h4>Code</h4>
+                        <h3>Code</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>333 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>333</div>
                     </footer>
                 </article>
 
@@ -234,11 +242,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/boers.jpg" alt="" width="90">
-                        <h4>Boers</h4>
+                        <h3>Boers</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>7 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>7</div>
                     </footer>
                 </article>
 
@@ -246,11 +254,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/rondo.jpg" alt="" width="90">
-                        <h4>Rondo's</h4>
+                        <h3>Rondo's</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>14 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>14</div>
                     </footer>
                 </article>
 
@@ -258,11 +266,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/blind.jpg" alt="" width="90">
-                        <h4>Blind</h4>
+                        <h3>Blind</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>38 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>38</div>
                     </footer>
                 </article>
 
@@ -270,11 +278,11 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/doof.jpg" alt="" width="90">
-                        <h4>Doof</h4>
+                        <h3>Doof</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>64 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>64</div>
                     </footer>
                 </article>
 
@@ -282,11 +290,87 @@
                 <article>
                     <a href="">
                         <img src="afbeeldingen/verassing.jpg" alt="" width="90">
-                        <h4>Verassing</h4>
+                        <h3>Verassing</h3>
                     </a>
                     <footer>
                         <button></button>
-                        <div>194<img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>194</div>
+                    </footer>
+                </article>
+
+            </div>
+        </section>
+        <section>
+            <h2>Alle verhalen</h2>
+            <div>
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/poepen.jpg" alt="" width="90">
+                        <h3>Poepen</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>97</div>
+                    </footer>
+                </article>
+
+
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/onomatopee.jpg" alt="" width="90">
+                        <h3>Onomatopee</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>69</div>
+                    </footer>
+                </article>
+
+
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/sportcommentaar.jpg" alt="" width="90">
+                        <h3>Sportcommentaar</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>4</div>
+                    </footer>
+                </article>
+
+
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/droom.jpg" alt="" width="90">
+                        <h3>Droom</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>34</div>
+                    </footer>
+                </article>
+
+
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/notitie%20thumbnail.png" alt="" width="90">
+                        <h3>Notitie</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>56</div>
+                    </footer>
+                </article>
+
+
+                <article>
+                    <a href="">
+                        <img src="afbeeldingen/moe.jpeg" alt="" width="90">
+                        <h3>Moe</h3>
+                    </a>
+                    <footer>
+                        <button></button>
+                        <div>12</div>
                     </footer>
                 </article>
 

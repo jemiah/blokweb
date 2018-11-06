@@ -15,30 +15,34 @@
             <ul>
                 <li><a href=""><img src="afbeeldingen/transavia-vector-logo.svg" alt="logo" width="50"></a></li>
                 <li>
-                    <a href="index.html"><img src="afbeeldingen/down-arrow.svg" alt="" width="15">Verhalen</a>
+                    <a href="index.html" class="pijltje">Verhalen</a>
                 </li>
-                <li><a href="mijnlijst.html">
-                        <img src="afbeeldingen/down-arrow.svg" alt="" width="15">Mijn lijst
+                <li> <a href="mijnlijst.html" class="pijltje">
+                        <div class="melding"></div>
+                        Mijn lijst
                     </a>
                 </li>
-                <li><a href=""><img src="afbeeldingen/zoek-icoon.svg" alt="" width="44"></a></li>
-                <li><a><img src="afbeeldingen/inlog-icoon.svg" alt="" width="43"></a></li>
+                <li><button></button></li>
+                <li><a>
+                        <div id="login"></div>
+                    </a></li>
             </ul>
+
         </nav>
         <h1>Mijn lijst</h1>
     </header>
-    <main>
-        <form action="mijnlijst.html">
-            <ul>
-                <li><img src="afbeeldingen/settings.svg" alt="" width="30"></li>
-                <li>
-                    <button id="knop">
-                        Bewerken
-                    </button>
-                </li>
-            </ul>
-        </form>
 
+    <form action="mijnlijst.html">
+        <ul>
+            <li id="tandwiel"></li>
+            <li>
+                <button id="knop">
+                    Bewerken
+                </button>
+            </li>
+        </ul>
+    </form>
+    <main>
         <section>
             <h2>Verhalen</h2>
             <div>
@@ -47,27 +51,27 @@
                     <button class="kruisje"></button>
                     <a href="vanvadertotzoon.html">
                         <img src="afbeeldingen/verhaal1.jpg" alt="" width="90">
-                        <h4>Van vader tot zoon</h4>
+                        <h3>Van vader tot zoon</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie.svg" alt="">
                         <button></button>
-                        <div>58 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>58</div>
                     </footer>
                 </article>
 
 
 
-                <article class="mijnlijst" id="weg">
+                <article class="mijnlijst verdwijn">
                     <button class="kruisje"></button>
                     <a href="">
                         <img src="afbeeldingen/boos.jpg" alt="">
-                        <h4>Paranoia</h4>
+                        <h3>Paranoia</h3>
                     </a>
                     <footer>
                         <img class="progressiebalk" src="afbeeldingen/progressie1.0.svg" alt="">
                         <button></button>
-                        <div>98 <img src="afbeeldingen/heart.svg" alt="" width="30"></div>
+                        <div>98</div>
                     </footer>
                 </article>
 
