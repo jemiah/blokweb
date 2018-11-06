@@ -243,6 +243,7 @@ form > ul > li > img {
 #zoeken {
     padding: 0em;
     background: none;
+    margin-top: 1em;
 }
 
 #zoeken input {
@@ -257,19 +258,18 @@ form > ul > li > img {
     border-bottom-right-radius: .1rem;
     border-top-left-radius: .375rem;
     border-top-right-radius: .1rem;
-
-
 }
 
 #zoeken button {
+    background-color: #30009D;
     background-image: url(afbeeldingen/zoeken.svg);
     background-repeat: no-repeat;
     background-size: 1.5em;
     background-position: center;
-    padding-top: 1.2em;
-    padding-bottom: 0.6em;
+    padding-top: 1.6em;
+    padding-bottom: 1em;
     padding-right: 2em;
-    margin-left: -0.2em;
+    margin-left: -0.3em;
     border-bottom-left-radius: .1rem;
     border-bottom-right-radius: .375rem;
     border-top-left-radius: .1rem;
@@ -298,7 +298,6 @@ header h1 {
     opacity: 0.95;
     padding: 1em;
     margin: 0 auto;
-    /margin-top: 1.5em;
     border-radius: 1rem;
     display: table;
 }
@@ -339,9 +338,6 @@ article div {
     color: black;
 }
 
-article div img {
-    /margin-bottom: -.5em;
-}
 
 article footer {
     display: flex;
@@ -472,10 +468,6 @@ footer button {
     margin-left: 3.4em;
     margin-top: -0.88em;
     opacity: 0;
-
-    /*:transition {
-        opacity: 1;
-    }*/
 }
 
 .ping {
@@ -496,7 +488,6 @@ footer button {
 
 .kruisje:hover {
     background-image: url(afbeeldingen/kruisjeroze.svg);
-
 }
 
 .show {
@@ -537,12 +528,13 @@ li button {
 }
 
 
+
 /*===========INLOGGEN===========*/
 
 #inloggen {
     margin-top: -10em;
     display: flex;
-
+    justify-content: center;
 }
 
 #lijn {
@@ -553,10 +545,13 @@ li button {
 }
 
 #divider {
+    transform: rotate(90deg);
     border: 0;
-    border-bottom: 1px dashed #e6e6e6;
-    background: #999;
-
+    border: .3px solid #e6e6e6;
+    background: #e6e6e6;
+    margin-left: 8.9em;
+    margin-top: 4em;
+    width: 8em;
 }
 
 legend {
@@ -564,7 +559,6 @@ legend {
     font-size: 1.5rem;
     padding-top: 2em;
     margin-bottom: -0.3em;
-
 }
 
 #email {
@@ -575,6 +569,7 @@ legend {
     font-size: 1rem;
     padding: 0.4em;
     margin-top: 0.1em;
+    margin-bottom: 1em;
     background-color: white;
 }
 
@@ -585,12 +580,10 @@ legend {
 
 #email:invalid {
     border-color: #FF0000;
-    background-color: #FF0000;
 }
 
 #email:valid {
     border-color: #0FD67D;
-    background-color: #0FD67D;
 
 }
 
@@ -602,7 +595,7 @@ fieldset {
     margin: 0.5em;
 }
 
-fieldset button {
+fieldset a {
     background-color: #FE2566;
     padding: 0.2em;
     border-radius: 6.25rem;
@@ -610,10 +603,12 @@ fieldset button {
     color: white;
     border: none;
     box-shadow: 0px 3px 0px 0px #C92254;
-    margin-top: 0.5em;
+    margin-top: .5em;
+    padding: .5em;
+
 }
 
-fieldset button:hover {
+fieldset a:hover {
     background-color: #fe608d;
     box-shadow: 0px 3px 0px 0px #c82254;
 }
@@ -622,17 +617,29 @@ fieldset div:nth-of-type(4) {
     float: right;
     width: 40%;
     font-size: 1rem;
+    margin-top: -3em;
 }
 
 fieldset div:nth-of-type(2) {
     float: left;
-    width: 40%;
+    width: 60%;
 }
 
 fieldset img {
     padding-top: 1em;
     margin-left: 1.4em;
 }
+
+#colorchange {
+    background-color: #FE2566;
+    box-shadow: 0px 3px 0px 0px #C92254;
+}
+
+#colorchange:hover {
+    background-color: #fe608d;
+    box-shadow: 0px 3px 0px 0px #c82254;
+}
+
 
 #kleur {
     background: none;
@@ -703,10 +710,17 @@ fieldset img {
 
     #inloggen {}
 
-    /form div:nth-of-type(2) {
+    form div:nth-of-type(3) {
         visibility: hidden;
     }
 
+    form div:nth-of-type(4) {
+        visibility: hidden;
+    }
+
+    fieldset div:nth-of-type(2) {
+        width: 40%;
+    }
 }
 
 /*===========LAPTOP FORMAAT===========*/
@@ -730,9 +744,16 @@ fieldset img {
         justify-content: center;
     }
 
+    form div:nth-of-type(3) {
+        visibility: hidden;
+    }
 
-    /#inloggen {
-        justify-content: center;
+    form div:nth-of-type(4) {
+        visibility: hidden;
+    }
+
+    fieldset div:nth-of-type(2) {
+        width: 40%;
     }
 }
 
@@ -746,7 +767,7 @@ fieldset img {
 @media (max-width: 29em) {
     #verhaalmobiel {
         display: block;
-        background-image: url(afbeeldingen/verhaalmobiel.gif);
+        background-image: url(afbeeldingen/verhaalmobiel1.gif);
     }
 
     #verhaaltablet {
@@ -762,7 +783,7 @@ fieldset img {
 @media (min-width: 29em) and (max-width: 63.9em) {
     #verhaaltablet {
         /display: block;
-        background-image: url(afbeeldingen/verhaaltablet.gif);
+        background-image: url(afbeeldingen/verhaaltablet3.gif);
     }
 
     #verhaallaptop {
@@ -779,7 +800,7 @@ fieldset img {
 @media (min-width: 64em) and (max-width: 162em) {
     #verhaalmobiel {
         display: none;
-        background-image: url(afbeeldingen/verhaallaptop.gif);
+        background-image: url(afbeeldingen/verhaallaptop3.gif);
     }
 
     #verhaaltablet {
