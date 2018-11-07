@@ -1,5 +1,5 @@
 # blokweb
-Deze code bestaat uit een index.html, mijnlijst.html, vanvadertotzoon.html, stylesheet.css en javascript.js.
+Deze code bestaat uit een index.html,indexleeg.html,indexleegalfabetisch.html, inloggen.html, mijnlijst.html, mijnlijstleeg.html, vanvadertotzoon.html, stylesheet.css en javascript.js.
 De website heeft de huisstijl van Transavia, je zult dus regelmatig dezelfde vormgeving terug zien. 
 De mobiele versie is een one-column, de tablet versie is een two-column en de laptop versie is een three-column.
 In elk verhaal zie je een afbeelding van het verhaal en de titel.
